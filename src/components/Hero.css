@@ -1,0 +1,202 @@
+.hero-container {
+  width: 100%;
+  min-height: 120vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+  align-items: flex-start;
+}
+.text-content {
+  flex: 1 1;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.logo-container {
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.heroSection {
+  display: flex;
+}
+
+.logohero {
+  width: 10%;
+  height: auto;
+  margin: 2% 3%;
+}
+
+.get-in-touch-button {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 0 3%;
+}
+
+.get-in-touch-button:hover {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.text-content h1 {
+  font-size: 50px;
+  color: #0E2368;
+  line-height: 1.2;
+  margin: 0px 10%;
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+}
+
+.highlight {
+  color: #e74c3c; /* Red color */
+}
+
+.text-content p {
+  font-size: 16px;
+  color: #666;
+  /* margin: 20px 0; */
+  margin: 20px 10%;
+}
+
+.explore-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin: 0 10%;
+}
+
+.explore-button:hover {
+  background-color: #c0392b;
+}
+
+.image-container {
+  flex: 1;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pizza-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0 0 0 30%;
+  position: relative;
+  top: -24px;
+}
+
+.redVector-image{
+  position: absolute;
+  width: 53%;
+  /* max-width: 100%; */
+  /* right: -21px; */
+  top: -1px;
+}
+
+
+@media screen and (min-width: 530px) {
+
+  .text-content h1 {
+      font-size: 50px !important;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .logohero{
+    visibility: hidden ;
+  }
+
+  .heroSection {
+      display: flex;
+      flex-direction: column-reverse;
+  }
+
+  .image-container {
+      /* flex: 1 1; */
+      min-width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: flex-end;
+  }
+
+  .pizza-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 0 0 0 30%;
+      position: relative;
+      top: -24px;
+  }
+
+  .redVector-image {
+      position: absolute;
+      /* width: 53%; */
+      /* height: 99%; */
+      min-width: 100%;
+      /* right: -21px; */
+      top: -1px;
+      /* min-height: 66%; */
+      /* height: auto; */
+  }
+
+  .text-content {
+      flex: 1 1;
+      /* width: 50%; */
+      /* margin: auto; */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .text-content {
+      flex: 1 1;
+      width: 100%;
+      margin: unset;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .text-content h1 {
+      font-size: 30px;
+      color: #0E2368;
+      line-height: 1.2;
+      margin: 0px 10%;
+      display: flex;
+      flex-direction: column;
+      font-weight: 700;
+      align-items: center;
+  }
+
+  .text-content p {
+      font-size: 16px;
+      color: #666;
+      /* margin: 20px 0; */
+      margin: 20px 10%;
+      text-align: center;
+  }
+}
