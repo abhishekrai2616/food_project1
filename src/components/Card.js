@@ -1,11 +1,10 @@
 import "./Card.css";
 export default function Card({ image, title, desc }) {
-  const counter = 1;
   return (
     <div className="main-div">
       <div className="content-container">
         <div>
-          <img src={image} className="image" />
+          <img src={image} className="image" alt="imageofPizza"/>
         </div>
 
         <div>
