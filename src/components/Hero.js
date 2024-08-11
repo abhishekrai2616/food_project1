@@ -12,7 +12,7 @@ const Hero = () => {
             </div>
             <div className='heroSection'>
                 <div className="text-content">
-                    <h1>Discover the <span class="highlight">Best</span> Food and Drinks</h1>
+                    <p id='headline'>Discover the <strong id="highlight">Best</strong> Food and Drinks</p>
                     <p>Naturally made Healthcare Products for the better care & support of your body.</p>
                     <button className="explore-button">Explore Now!</button>
                 </div>

@@ -1,18 +1,17 @@
 /* src/components/About.css */
 .about {
     display: flex;
-    height: 70vh;
-    width: 100vw;
     background-image: linear-gradient(rgba(30, 42, 93, 0.04),rgba(48, 62, 130, 0.04),rgba(60, 80, 157, 0.04));
     justify-content: space-evenly;
+    padding: 0 15%;
   }
   
   .about-image img {
-    max-height: 100%;
+    width: 60%;
   }
   
   .about-content {
-    max-width: 30%;
+    width: 60%;
     display: flex;
     align-items: center;
   }
@@ -49,10 +48,11 @@
     border-radius: 21px;
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     .about {
       flex-direction: column;
       align-items: center;
+      padding: 10% 0;
     }
   
     .about-content {
@@ -63,6 +63,10 @@
 
     .about-image {
       display: none;
+    }
+
+    .about-content p{
+      margin: 15% 0;
     }
   }
   

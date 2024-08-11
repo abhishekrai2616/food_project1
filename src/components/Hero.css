@@ -1,16 +1,15 @@
 .hero-container {
   width: 100%;
-  min-height: 120vh;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: space-between;
   align-items: flex-start;
+  margin-bottom: 10%;
 }
 .text-content {
-  flex: 1 1;
-  width: 50%;
-  margin: auto;
+  margin : 13% 0% 5% 7%;
+  width : 27%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,7 +17,7 @@
 }
 
 .logo-container {
-  margin-bottom: 20px;
+  margin: 0 2%;
   width: 100%;
   display: flex;
   position: absolute;
@@ -54,37 +53,39 @@
   color: white;
 }
 
-.text-content h1 {
-  font-size: 50px;
+#headline {
+  font-size: 3.5rem;
   color: #0E2368;
   line-height: 1.2;
-  margin: 0px 10%;
   display: flex;
   flex-direction: column;
   font-weight: 700;
+  margin: 0;
 }
 
-.highlight {
-  color: #e74c3c; /* Red color */
+#highlight {
+  color: #e74c3c;
+  display: inline;
+  font-size: 3.5rem;
 }
 
 .text-content p {
+  padding: 5%;
   font-size: 16px;
   color: #666;
-  /* margin: 20px 0; */
-  margin: 20px 10%;
+  margin:0;
 }
 
 .explore-button {
   background-color: #e74c3c;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 5% 7%;
   border-radius: 30px;
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s ease;
-  margin: 0 10%;
+  margin:5%
 }
 
 .explore-button:hover {
@@ -92,6 +93,7 @@
 }
 
 .image-container {
+  position: relative;
   flex: 1;
   width: 50%;
   display: flex;
@@ -99,8 +101,7 @@
 }
 
 .pizza-image {
-  max-width: 100%;
-  height: auto;
+  width: 75%;
   border-radius: 0 0 0 30%;
   position: relative;
   top: -24px;
@@ -108,22 +109,32 @@
 
 .redVector-image{
   position: absolute;
-  width: 53%;
-  /* max-width: 100%; */
-  /* right: -21px; */
-  top: -1px;
+  width: 83%;
+  top: -2%;
 }
 
 
 @media screen and (min-width: 530px) {
 
-  .text-content h1 {
-      font-size: 50px !important;
+  #headline {
+      font-size: 3.5rem;
+      display: inline;
   }
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
+
+  #highlight{
+    display: inline;
+    font-size: 2.7rem;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+
+  .get-in-touch-button{
+    margin : 2% 3%;
+  }
 
   .logohero{
     visibility: hidden ;
@@ -143,7 +154,7 @@
   }
 
   .pizza-image {
-      max-width: 100%;
+      width: 100%;
       height: auto;
       border-radius: 0 0 0 30%;
       position: relative;
@@ -152,27 +163,12 @@
 
   .redVector-image {
       position: absolute;
-      /* width: 53%; */
-      /* height: 99%; */
-      min-width: 100%;
-      /* right: -21px; */
-      top: -1px;
-      /* min-height: 66%; */
-      /* height: auto; */
+      width: 110%;
+      top: -1%;
+      right: -3%;
   }
 
   .text-content {
-      flex: 1 1;
-      /* width: 50%; */
-      /* margin: auto; */
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-  }
-
-  .text-content {
-      flex: 1 1;
       width: 100%;
       margin: unset;
       display: flex;
@@ -181,15 +177,16 @@
       align-items: center;
   }
 
-  .text-content h1 {
-      font-size: 30px;
+  #headline {
+      font-size: 2.7rem;
       color: #0E2368;
       line-height: 1.2;
-      margin: 0px 10%;
-      display: flex;
+      display: inline;
       flex-direction: column;
       font-weight: 700;
       align-items: center;
+      margin-bottom: 0;
+      padding-bottom: 0;
   }
 
   .text-content p {
