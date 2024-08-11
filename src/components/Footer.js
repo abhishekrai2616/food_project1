@@ -30,9 +30,9 @@ const Footer = () => {
           <div>
             <h3 className='footer-heading social-heading'>Social Links</h3>
             <div className="social-icons">
-              <a href="#"><img className='social-logo' src={insta} alt="Instagram" /></a>
-              <a href="#"><img className='social-logo' src={twitter} alt="Twitter" /></a>
-              <a href="#"><img style={{width:'13px'}} className='social-logo' src={fb} alt="Facebook" /></a>
+              <div><img className='social-logo' src={insta} alt="Instagram" /></div>
+              <div><img className='social-logo' src={twitter} alt="Twitter" /></div>
+              <div><img style={{width:'13px'}} className='social-logo' src={fb} alt="Facebook" /></div>
             </div>
           </div>
           <div className="footer-bottom">
