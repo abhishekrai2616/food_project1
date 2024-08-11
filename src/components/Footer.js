@@ -21,10 +21,10 @@ const Footer = () => {
         </div>
         <div className="footer-section">
           <h3 className='footer-heading'>More</h3>
-          <a className='footer-text' >About Us</a>
-          <a className='footer-text' >Products</a>
-          <a className='footer-text' >Career</a>
-          <a className='footer-text' >Contact Us</a>
+          <div className='footer-text' >About Us</div>
+          <div className='footer-text' >Products</div>
+          <div className='footer-text' >Career</div>
+          <div className='footer-text' >Contact Us</div>
         </div>
         <div className="footer-section social-links">
           <div>
